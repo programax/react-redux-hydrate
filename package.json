@@ -5,6 +5,8 @@
   "dependencies": {
     "@material-ui/core": "^3.6.1",
     "@material-ui/icons": "^3.0.1",
+    "chai": "^4.2.0",
+    "mocha": "^6.1.4",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
     "react-redux": "^5.1.1",
@@ -16,6 +18,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "test:mocha": "mocha --require @babel/register --require test/setup.js",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -26,5 +29,14 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "@babel/preset-env": "^7.5.4",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/register": "^7.4.4",
+    "chai-enzyme": "^1.0.0-beta.1",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.14.0",
+    "sinon": "^7.3.2"
+  }
 }
